@@ -141,7 +141,7 @@ export default {
   },
   created: function() {
     axios
-      .get("http://www.xiongmaoyouxuan.com/api/tab/10?start=0")
+      .get("https://www.xiongmaoyouxuan.com/api/tab/10?start=0")
       .then(response => {
         //console.log(response);
         this.oftenGoods = response.data.data.items.list;
@@ -151,7 +151,7 @@ export default {
         alert("网络错误，不能访问");
       });
     axios
-      .get("http://www.xiongmaoyouxuan.com/api/column/3464/items?start=0")
+      .get("https://www.xiongmaoyouxuan.com/api/column/3464/items?start=0")
       .then(response => {
         //console.log(response);
         this.type1Goods = response.data.data.list;
@@ -161,7 +161,7 @@ export default {
         alert("网络错误，不能访问");
       });
     axios
-      .get("http://www.xiongmaoyouxuan.com/api/column/3464/items?start=20")
+      .get("https://www.xiongmaoyouxuan.com/api/column/3464/items?start=20")
       .then(response => {
         this.type2Goods = response.data.data.list;
       })
@@ -169,7 +169,7 @@ export default {
         alert("网络错误，不能访问");
       });
     axios
-      .get("http://www.xiongmaoyouxuan.com/api/column/3464/items?start=40")
+      .get("https://www.xiongmaoyouxuan.com/api/column/3464/items?start=40")
       .then(response => {
         this.type3Goods = response.data.data.list;
       })
@@ -177,7 +177,7 @@ export default {
         alert("网络错误，不能访问");
       });
     axios
-      .get("http://www.xiongmaoyouxuan.com/api/column/3464/items?start=60")
+      .get("https://www.xiongmaoyouxuan.com/api/column/3464/items?start=60")
       .then(response => {
         this.type4Goods = response.data.data.list;
       })
